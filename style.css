@@ -21,7 +21,7 @@ h1{
 .master-grid{
     height: 100vh;
     display: grid;
-    grid-template:  repeat(4, 1fr) / 246px repeat(3, 1fr);
+    grid-template:   1fr repeat(3, 2fr) / 246px repeat(3, 1fr);
 }
 
 .sidebar{
@@ -44,7 +44,67 @@ ul li{
     text-align: left;
 }
 
+ul li:hover{
+    font-size: larger;
+}
+
 img{
     padding-right: 15px;
     margin-bottom: -2px;
 }
+
+.main-header{
+    grid-area: 1 / 2 / 2 / 5;
+    background-color: #fff;
+    display: grid;
+    grid-template: repeat(2, 1fr) / 2fr 1fr;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.main-header-left{
+    grid-area: 1 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.user-profile-details{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.profile-pic-container {
+    display: inline-block;
+}
+
+
+
+.profile-pic-container img{
+
+    width: 100px;
+}
+
+.profile-name-display{
+    display: inline-block;
+}
+
+.search-wrapper{
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#search{
+    background-color: #E2E8F0;
+    border-style: none;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.main-content{
+    grid-area: 2 / 2 / 5 / 5;
+    background-color: #E2E8F0;
+}
+
+
